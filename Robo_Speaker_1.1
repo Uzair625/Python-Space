@@ -1,0 +1,21 @@
+#Python Robo Spekear created by me
+import os
+import pyttsx3
+
+if __name__ == '__main__':
+    print("Welcome to RoboSpeaker 1.1 Created by Uzair::")
+while True:
+    speech = os
+    talk = pyttsx3.init()
+    voices = talk.getProperty('voices')  # Get the available voices
+    # Set the voice to a male voice
+    talk.setProperty('voice', voices[1].id)  # Assuming the first voice in the list is male
+    os = talk
+    answer = input("What do you want to say:: ")
+    if answer == "quit":
+        x = "Bye Bye Robo Speaker"
+        os.say(x)
+        os.runAndWait()
+        break
+    os.say(answer)
+    os.runAndWait()
